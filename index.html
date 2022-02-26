@@ -10,17 +10,26 @@
 </head>
 <!-- https://www.youtube.com/watch?v=nOdDtnHWaDo -->
 <body>
-    <div class="cubo">
-        <div class="top">
-
-        </div>
-        <div class="">
-            <span style="--i:0"></span>
-            <span style="--i:1"></span>
-            <span style="--i:2"></span>
-            <span style="--i:3"></span>
+    <div class="cubo" id="cubo">
+        <div class="tel1"></div>
+        <div class="tel2"></div>
+        <div class="top"></div>
+        <div>
+            <span class="parede-0" style="--i:0"></span>
+                <span class="door" style="--i:0"></span>
+            <span class="parede-1" style="--i:1"></span>                  
+                <span class="window1" style="--i:1"></span>          
+            <span class="parede-2" style="--i:2"></span>        
+            <span class="parede-3" style="--i:3"></span>
+                <span class="window2" style="--i:3"></span>
         </div>
     </div>
+    <script>
+        let box = document.getElementById('cubo');
+        window.onmousemove = function(e){
+           // box.style.transform = "rotateX(-30deg) rotateY("+e.clientX+"deg)";
+        }
+    </script>
     
 </body>
 </html>
