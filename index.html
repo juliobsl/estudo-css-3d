@@ -3,31 +3,46 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Luz de Ambiente e 3D - Estudo</title>
+    <title>That's a house</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <link href='https://fonts.googleapis.com/css?family=Shizuru' rel='stylesheet'>
 </head>
 <!-- https://www.youtube.com/watch?v=nOdDtnHWaDo -->
 <body>
+    <div class="wall"><p class="texto">THAT'S A HOUSE</p></div>
+    <div class="floor"></div>
     <div class="cubo" id="cubo">
         <div class="tel1"></div>
         <div class="tel2"></div>
-        <div class="top"></div>
-        <div>
+        <!-- <div class="top"></div> -->
+        <div class="casa">
             <span class="parede-0" style="--i:0"></span>
                 <span class="door" style="--i:0"></span>
-            <span class="parede-1" style="--i:1"></span>                  
+            <span class="parede-1-left" style="--i:1;"></span>                  
+            <span class="parede-1-right" style="--i:1;"></span>                  
                 <span class="window1" style="--i:1"></span>          
             <span class="parede-2" style="--i:2"></span>        
-            <span class="parede-3" style="--i:3"></span>
+            <span class="parede-3-left" style="--i:3;"></span>
+            <span class="parede-3-right" style="--i:3;"></span>
                 <span class="window2" style="--i:3"></span>
         </div>
+        <div class="chamine">
+            <span class="lado-0" style="--i:0"></span>
+            <span class="lado-1" style="--i:1"></span>  
+            <span class="lado-2" style="--i:2"></span>        
+            <span class="lado-3" style="--i:3"></span>
+        </div>
+        <div class="fumaca">
+            <span></span>  
+        </div>
     </div>
+    
     <script>
         let box = document.getElementById('cubo');
         window.onmousemove = function(e){
-           // box.style.transform = "rotateX(-30deg) rotateY("+e.clientX+"deg)";
+        //    box.style.transform = "rotateX(-30deg) rotateY("+e.clientX+"deg)";
         }
     </script>
     
